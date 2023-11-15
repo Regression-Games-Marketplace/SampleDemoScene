@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using RegressionGames;
-using UnityEditor;
 using UnityEngine;
 
 namespace FirstBotDemo
@@ -136,20 +134,5 @@ namespace FirstBotDemo
             _hasProjectile = false;
         }
 
-        [RGAction]
-        public void SelectAndAttackEnemy(int enemyId, int ability)
-        {
-            Debug.Log("Attack enemy with id " + enemyId);
-            var enemy = RGFindUtils.Instance.FindOneByInstanceId<EnemyController>(enemyId);
-            SelectEnemy(enemy);
-            Attack(abilities[ability]);
-        }
-
-        [RGState]
-        public bool IsAttacking()
-        {
-            return !string.IsNullOrEmpty(_attackAnimation) && _animator.GetBool(_attackAnimation);
-        }
-        
     }
 }

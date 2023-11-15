@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using FirstBotDemo.Events;
-using RegressionGames;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -131,7 +127,6 @@ namespace FirstBotDemo
         /*
          * Gets the enemies current hp
          */
-        [RGState("CurrentHealth")]
         public int GetCurrentHp()
         {
             return _currentHp;
@@ -140,7 +135,6 @@ namespace FirstBotDemo
         /*
          * Gets the enemy's total HP from its assigned info
          */
-        [RGState("MaxHealth")]
         public int GetTotalHp()
         {
             if (!enemyInfo)

@@ -13,22 +13,18 @@ MonoBehaviour:
   m_Name: Readme
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 727a75301c3d24613a3ebcec4a24c2c8, type: 3}
-  title: URP Empty Template
+  title: Regression Games Sample Demo
   sections:
-  - heading: Welcome to the Universal Render Pipeline
-    text: This template includes the settings and assets you need to start creating with the Universal Render Pipeline.
+  - heading: Welcome to the Regression Games Sample Demo
+    text: This sample game is used by Regression Games to walk through the process of creating a bot.
     linkText: 
     url:
-  - heading: URP Documentation
+  - heading: Getting Started
     text:
-    linkText: Read more about URP
-    url: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest
-  - heading: Forums
+    linkText: Follow the tutorial
+    url: https://docs.regression.gg/studios/unity/tutorials/first_tutorial
+  - heading: Discord
     text:
-    linkText: Get answers and support
-    url: https://forum.unity.com/forums/universal-render-pipeline.383/
-  - heading: Report bugs
-    text:
-    linkText: Submit a report
-    url: https://unity3d.com/unity/qa/bug-reporting
+    linkText: Get answers and support on our Discord
+    url: https://discord.com/invite/925SYVse2H
   loadedLayout: 1

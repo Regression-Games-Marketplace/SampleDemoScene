@@ -1,3 +1,4 @@
+using System;
 using FirstBotDemo.Events;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,7 +16,9 @@ namespace FirstBotDemo
         private CheckCameraVisibility _checkCameraVisibility;
         private Transform _player;
         
-        private int _currentHp;
+        [NonSerialized]
+        public int CurrentHp;
+        
         private bool _isSelected = false;
         private bool _isMouseOver = false;
 
@@ -33,7 +36,7 @@ namespace FirstBotDemo
 
         private void Start()
         {
-            _currentHp = enemyInfo.hp;
+            CurrentHp = enemyInfo.hp;
         }
 
         private void OnExitCameraView()
@@ -95,7 +98,7 @@ namespace FirstBotDemo
         {
             _animator.Play("Hit");
             enemyDamageText.SetDamageText(Mathf.Round(damage).ToString());
-            _currentHp -= damage;
+            CurrentHp -= damage;
         }
         
         /*
@@ -129,7 +132,7 @@ namespace FirstBotDemo
          */
         public int GetCurrentHp()
         {
-            return _currentHp;
+            return CurrentHp;
         }
         
         /*
